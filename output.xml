@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2025-04-23T22:34:15.404048" rpa="false" schemaversion="5">
+<suite id="s1" name="KCSales" source="C:\Users\SRout\PycharmProjects\pythonProject\KCSales">
+<suite id="s1-s1" name="Tests" source="C:\Users\SRout\PycharmProjects\pythonProject\KCSales\Tests">
+<suite id="s1-s1-s1" name="GuestUI" source="C:\Users\SRout\PycharmProjects\pythonProject\KCSales\Tests\GuestUI.robot">
+<test id="s1-s1-s1-t1" name="Select Code and Generate Proposal Details On GuestUi" line="24">
+<kw name="Open Browser with Salesforce URL" owner="ContractProposalsKeywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:15.761303" level="INFO">Opening browser 'Chrome' to base url 'https://orangelake--intuat.sandbox.my.salesforce.com/'.</msg>
+<arg>${SFURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument("--disable-notifications")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T22:34:15.760273" elapsed="2.361177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T22:34:18.122447" elapsed="0.081579"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-23T22:34:18.204026" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:18.204026" elapsed="1.004127"/>
+</kw>
+<status status="PASS" start="2025-04-23T22:34:15.759282" elapsed="3.448871"/>
+</kw>
+<kw name="Login To Salesforce" owner="ContractProposalsKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:19.210192" level="INFO">Typing text 'srout@holidayinnclub.com.neworg.intuat' into text field '//input[@id ='username']'.</msg>
+<arg>//input[@id ='username']</arg>
+<arg>${sfusername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:19.209188" elapsed="3.405836"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:22.615024" level="INFO">Typing text 'Orange#1234567' into text field '//input[@id ='password']'.</msg>
+<arg>//input[@id ='password']</arg>
+<arg>${sfpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:22.615024" elapsed="3.142527"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:25.757551" level="INFO">Clicking button '//input[@id ='Login']'.</msg>
+<arg>//input[@id ='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:25.757551" elapsed="4.629679"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:30.387230" elapsed="1.002146"/>
+</kw>
+<status status="PASS" start="2025-04-23T22:34:19.209188" elapsed="12.180188"/>
+</kw>
+<kw name="Update Contract Proposal From Code" owner="ContractProposalsKeywords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:31.390406" elapsed="1.002335"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:32.392741" level="INFO">Clicking element '//div/one-app-nav-bar-item-root[3]'.</msg>
+<arg>//div/one-app-nav-bar-item-root[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:32.392741" elapsed="2.122103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Opportunity menu clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T22:34:34.514844" elapsed="0.000957"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:34.515801" elapsed="1.002699"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:35.518500" level="INFO">Clicking link '//a[@class='slds-truncate'][contains(string(),'Aaron')]'.</msg>
+<arg>//a[@class='slds-truncate'][contains(string(),'Aaron')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:35.518500" elapsed="4.214903"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:39.733403" elapsed="1.002343"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=(//span[@class='test-id__field-value slds-form-element__static slds-grow word-break-ie11'])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-23T22:34:40.735746" elapsed="4.225430"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:34:44.961176" elapsed="1.002137"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:46.991744" level="INFO">${element_Proposal} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6abb87fcd03b47080a5a7b936056a2c0", element="f.CF47942CB2F9D870870F235995AEBF27.d.8F4393EA6E3FCB1D598D9B2A68B97F7F.e.4547")&gt;</msg>
+<var>${element_Proposal}</var>
+<arg>xpath=//div[@class='slds-col slds-size_4-of-7 cNewProposalSelector']/div/div/div/div</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:45.963313" elapsed="1.028431"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:46.991744" level="INFO">Simulating Mouse Over on element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6abb87fcd03b47080a5a7b936056a2c0", element="f.CF47942CB2F9D870870F235995AEBF27.d.8F4393EA6E3FCB1D598D9B2A68B97F7F.e.4547")&gt;'.</msg>
+<arg>${element_Proposal}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:46.991744" elapsed="1.268837"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:48.260581" level="INFO">Double clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6abb87fcd03b47080a5a7b936056a2c0", element="f.CF47942CB2F9D870870F235995AEBF27.d.8F4393EA6E3FCB1D598D9B2A68B97F7F.e.4547")&gt;'.</msg>
+<arg>${element_Proposal}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:48.260581" elapsed="1.344084"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:51.669648" level="INFO">${ProposalCode} = 02VIL-066</msg>
+<var>${ProposalCode}</var>
+<arg>(//div[@class='slds-col slds-p-around_xxx-small'])[4]/div/div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:49.604665" elapsed="2.064983"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ProposalCode}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T22:34:51.669648" elapsed="0.001033"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Before Update: ${Code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T22:34:51.670681" elapsed="0.002022"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-23T22:34:51.672703" level="INFO">${Code} = 02VIL-066</msg>
+<arg>${Code}</arg>
+<arg>${ProposalCode}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-23T22:34:51.672703" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>After Update: ${Code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T22:34:51.672703" elapsed="0.000995"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:34:51.673698" level="INFO">Executing JavaScript:
+window.open('https://edocsuat.orangelake.com/code', '_blank')
+Without any arguments.</msg>
+<arg>window.open('${CODEURL}', '_blank')</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-04-23T22:34:51.673698" elapsed="1.088227"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T22:34:54.762728" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T22:34:52.761925" elapsed="2.000803"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title=/code</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:34:54.763250" elapsed="13.124755"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>New tab opened and switched</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T22:35:07.888005" elapsed="0.001037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:07.889042" level="INFO">Typing text '02VIL-066' into text field '//input[@placeholder='Code']'.</msg>
+<arg>//input[@placeholder='Code']</arg>
+<arg>${Code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:07.889042" elapsed="3.112664"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:11.001706" level="INFO">Clicking button '//button[@class='button is-primary is-large']'.</msg>
+<arg>//button[@class='button is-primary is-large']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:11.001706" elapsed="5.126437"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:35:16.128669" elapsed="1.002526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[@class='button is-primary is-large']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T22:35:17.131195" elapsed="2.794147"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:19.925342" level="INFO">Clicking button '//button[@class='button is-primary is-large']'.</msg>
+<arg>//button[@class='button is-primary is-large']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:19.925342" elapsed="5.141896"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:25.067760" level="INFO">Clicking element '//input[@class='input is-medium ']'.</msg>
+<arg>//input[@class='input is-medium ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:25.067238" elapsed="2.093403"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:35:27.160641" elapsed="1.002378"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:28.163541" level="INFO">Typing text 'Test123' into text field '//input[@class='input is-medium ']'.</msg>
+<arg>//input[@class='input is-medium ']</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:28.163541" elapsed="3.090795"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-04-23T22:35:31.254336" elapsed="3.047573"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:34.302431" level="INFO">Clicking button '//button[@class='button is-medium is-fullwidth is-primary']'.</msg>
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:35:34.302431" elapsed="5.114787"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:35:39.417218" elapsed="1.002517"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:40.420255" level="INFO">Selecting options from selection list '//Select[@name='day']' by value 1.</msg>
+<arg>//Select[@name='day']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-04-23T22:35:40.420255" elapsed="6.066924"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:46.487712" level="INFO">Selecting options from selection list '//Select[@name='months']' by index 1.</msg>
+<arg>//Select[@name='months']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-04-23T22:35:46.487712" elapsed="8.096643"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:35:54.584355" level="INFO">Selecting options from selection list '//Select[@name='year']' by value 1981.</msg>
+<arg>//Select[@name='year']</arg>
+<arg>1981</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-04-23T22:35:54.584355" elapsed="6.065814"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:00.650169" level="INFO">Typing text 'srout@holidayinnclub.com' into text field '(//div[@class='control'])[5]/input'.</msg>
+<arg>(//div[@class='control'])[5]/input</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:00.650169" elapsed="3.249603"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:03.900294" level="INFO">Typing text '123456789' into text field '//div[@class='card-content']/div[3]/div[2]/div/div/input'.</msg>
+<arg>//div[@class='card-content']/div[3]/div[2]/div/div/input</arg>
+<arg>${SSN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:03.899772" elapsed="3.155448"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:36:07.055743" elapsed="1.002735"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T22:36:08.559881" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T22:36:08.058478" elapsed="0.501403"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>//div[@class='card-content']/div[4]/div/div/div/input</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:08.559881" elapsed="2.063759"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:10.624163" level="INFO">Clicking element '//div[@class='card-content']/div[4]/div/div/div/input'.</msg>
+<arg>//div[@class='card-content']/div[4]/div/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:10.624163" elapsed="2.090490"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:12.715187" level="INFO">Sending key(s) ('\\ue011',) to //div[@class='card-content']/div[4]/div/div/div/input element.</msg>
+<msg time="2025-04-23T22:36:15.029942" level="INFO">Sending keys \ue011</msg>
+<arg>//div[@class='card-content']/div[4]/div/div/div/input</arg>
+<arg>\\ue011</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-04-23T22:36:12.714653" elapsed="3.393070"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:16.107723" level="INFO">Typing text '22345678999' into text field '//div[@class='card-content']/div[4]/div/div/div/input'.</msg>
+<arg>//div[@class='card-content']/div[4]/div/div/div/input</arg>
+<arg>${Phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:16.107723" elapsed="3.162396"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:19.270642" level="INFO">Typing text 'Orlando' into text field '//div[@class='card-content']/div[6]/div[2]/div/div/input'.</msg>
+<arg>//div[@class='card-content']/div[6]/div[2]/div/div/input</arg>
+<arg>${City}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T22:36:19.270119" elapsed="3.143728"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-23T22:36:22.413847" elapsed="1.002544"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<msg time="2025-04-23T22:36:31.719067" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T22:36:31.720054" level="FAIL">Element '//button[@class='button is-medium is-fullwidth is-primary']' was not enabled in 5 seconds.</msg>
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="FAIL" start="2025-04-23T22:36:23.416391" elapsed="8.305706">Element '//button[@class='button is-medium is-fullwidth is-primary']' was not enabled in 5 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.722097" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.722097" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[1]</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.722097" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[2]</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.722097" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[3]</arg>
+<arg>James Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[4]</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[5]</arg>
+<arg>Westgate US 192</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>//div[@class='select is-medium is-fullwidth ']/select</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[1]</arg>
+<arg>James1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.723090" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[2]</arg>
+<arg>COusin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>(//div/input)[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[3]</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[4]</arg>
+<arg>James2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>//div[@class='card']/div[1]/div[3]/div[2]/div/div/div/select</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[5]</arg>
+<arg>COusin2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//div/input)[6]</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>//div[@class='card']/div[2]/div[3]/div[2]/div/div/div/select</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.724102" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>//div[@class='column is-half is-offset-one-quarter has-text-centered']/div/div/div/select</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>//div[@class='select is-medium is-fullwidth is-danger']/select</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//div[@class='column is-one-quarter']/div/div/input</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//div[@class='column is-one-half']/div/div/input</arg>
+<arg>4444333322221111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//form[@id='add-payment-form']/fieldset/div[2]/div[2]/div[2]/div/div/input</arg>
+<arg>04/28</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.725096" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//form[@id='add-payment-form']/fieldset/div[2]/div[2]/div[3]/div/div/input</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//form[@id='add-payment-form']/fieldset/div[3]/div/div/div/input</arg>
+<arg>720</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//input[@class='input is-medium is-danger'])[1]</arg>
+<arg>Good View</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.726091" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//input[@class='input is-medium is-danger'])[1]</arg>
+<arg>Property</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.727092" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>(//input[@class='input is-medium is-danger'])[1]</arg>
+<arg>Good Deal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.727092" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class='button is-medium is-fullwidth is-primary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.727092" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-04-23T22:36:31.727092" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-23T22:34:31.390406" elapsed="120.336686">Element '//button[@class='button is-medium is-fullwidth is-primary']' was not enabled in 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T22:36:31.728094" elapsed="3.211877"/>
+</kw>
+<doc>This test case selects a code and Generate details for Proposal On GuestUi.</doc>
+<tag>SelectCode</tag>
+<status status="FAIL" start="2025-04-23T22:34:15.758290" elapsed="139.182707">Element '//button[@class='button is-medium is-fullwidth is-primary']' was not enabled in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-04-23T22:34:15.439375" elapsed="139.503648"/>
+</suite>
+<status status="FAIL" start="2025-04-23T22:34:15.436351" elapsed="139.507673"/>
+</suite>
+<status status="FAIL" start="2025-04-23T22:34:15.407591" elapsed="139.537432"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">SelectCode</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="KCSales">KCSales</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">KCSales.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="GuestUI">KCSales.Tests.GuestUI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
